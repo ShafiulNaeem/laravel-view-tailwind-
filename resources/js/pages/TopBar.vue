@@ -5,10 +5,10 @@
     <h1 class="text-2xl font-bold text-gray-800">
     <router-link
        :to="{ name: 'Home'}">
-        Product Management Task
+        Product Management
       </router-link>
     </h1>
-    
+
     <!-- Navigation Buttons -->
     <div class="flex space-x-4">
       <router-link

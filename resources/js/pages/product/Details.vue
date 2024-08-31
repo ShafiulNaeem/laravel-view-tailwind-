@@ -8,7 +8,7 @@
 
       <!-- Categories -->
       <div class="flex flex-wrap items-center mb-6">
-        <span v-for="category in product.category" :key="category.id" class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">
+        <span v-for="category in product.categories" :key="category.id" class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">
           {{ category.name }}
         </span>
       </div>

@@ -16,16 +16,16 @@
       </thead>
       <tbody>
         <tr v-for="product in products" :key="product.id" class="border-t">
-          <td class="px-4 py-2">{{ product.name }}</td>
-          <td class="px-4 py-2">
+          <td class="px-4 py-2 text-center">{{ product.name }}</td>
+          <td class="px-4 py-2 text-center">
             <img :src="'/images/' + product.image" alt="Product Image" class="w-16 h-16 object-cover rounded" />
           </td>
-          <td class="px-4 py-2">
-            <span v-for="category in product.categories" :key="category.id">
-              <b>{{category.name}} ,</b>
-             </span>
+          <td class="px-4 py-2 text-center">
+            <span v-for="category in product.categories" :key="category.id" class="bg-blue-100 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">
+              {{ category.name }}
+            </span>
           </td>
-          <td class="px-4 py-2 flex items-center space-x-4">
+          <td class="px-4 py-2 flex items-center space-x-4 text-center">
             <router-link :to="{ name: 'ProductDetails', params: { id: product.id } }" class="text-blue-500 hover:text-blue-700 font-semibold">
               Details
             </router-link>
